@@ -16,6 +16,7 @@ export default function Setting() {
         paddingHorizontal: 16,
       }}
     >
+      {/* Screen */}
       <TouchableWithoutFeedback
         onPress={() => router.push("/(tabs)/(setting)/details")}
       >
@@ -39,11 +40,42 @@ export default function Setting() {
               fontWeight: 600,
             }}
           >
-            Details
+            Details Screen
           </Text>
           <Ionicons name="chevron-forward" size={24} color="black" />
         </GlassView>
       </TouchableWithoutFeedback>
+      {/* Modal Screen */}
+      <TouchableWithoutFeedback
+        onPress={() => router.push("/(tabs)/(setting)/modal-screen")}
+      >
+        <GlassView
+          style={{
+            paddingVertical: 16,
+            paddingHorizontal: 20,
+            borderRadius: 12,
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginTop: 10,
+          }}
+          glassEffectStyle="clear"
+          isInteractive
+          tintColor="#99999990"
+        >
+          <Text
+            style={{
+              color: "#000000",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
+            Modal Screen
+          </Text>
+          <Ionicons name="chevron-forward" size={24} color="black" />
+        </GlassView>
+      </TouchableWithoutFeedback>
+      {/* Switch */}
       <GlassView
         style={{
           paddingVertical: 16,
@@ -52,7 +84,7 @@ export default function Setting() {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          marginTop: 16,
+          marginTop: 10,
         }}
         glassEffectStyle="clear"
         isInteractive

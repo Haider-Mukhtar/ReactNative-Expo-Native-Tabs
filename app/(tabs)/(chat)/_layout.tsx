@@ -15,11 +15,13 @@ export default function ChatLayout() {
           title: "Chat",
           headerLargeTitle: true,
           headerLargeTitleShadowVisible: false,
-          headerBlurEffect: "systemUltraThinMaterial",
+          headerTransparent: true,
+          headerBlurEffect: "none",
           headerSearchBarOptions: {
             placement: 'integratedButton',
             placeholder: 'Search',
-            onChangeText: () => {},
+            onChangeText: () => { },
+            hideWhenScrolling: true,
           }
         }}
       />

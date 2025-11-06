@@ -15,11 +15,13 @@ export default function HomeLayout() {
           title: "Home",
           headerLargeTitle: true,
           headerLargeTitleShadowVisible: false,
-          headerBlurEffect: "systemUltraThinMaterial",
+          headerTransparent: true,
+          headerBlurEffect: "none",
           headerSearchBarOptions: {
             placement: 'integratedButton',
             placeholder: 'Search',
-            onChangeText: () => {},
+            onChangeText: () => { },
+            hideWhenScrolling: true,
           }
         }}
       />
